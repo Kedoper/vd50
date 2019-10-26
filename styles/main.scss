@@ -1,0 +1,137 @@
+$primary-color: #43454c;
+$primary-color__light: #6e7078;
+$primary-color__dark: #1c1e24;
+
+$secondary-color: #242529;
+$secondary-color__light: #4c4d51;
+$secondary-color__dark: #000000;
+
+$primary-text_color: #ffffff;
+$secondary-text_color: #ffffff;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-text_color;
+
+}
+
+body {
+  background-color: $primary-color;
+  color: $primary-text_color;
+}
+
+button {
+  background-color: $primary-color__light;
+  border: none;
+  padding: 8px;
+  color: $primary-text_color;
+}
+
+.hide {
+  display: none !important;
+}
+
+.page {
+  &-header {
+    background-color: $secondary-color;
+    color: $secondary-text_color;
+    padding: 20px;
+  }
+
+  &-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &__title {
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+}
+
+.link-emulate {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+
+  &-item {
+    margin-left: 20px;
+  }
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+
+.info {
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color__dark;
+    margin: 0 20px 20px 0;
+    width: 100%;
+
+    &__header {
+      padding: 10px;
+      border-bottom: 1px solid $primary-color;
+    }
+
+    &__body {
+      padding: 10px;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &-row {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+
+    & > label {
+      margin-bottom: 5px;
+    }
+
+    & > input {
+      padding: 5px;
+    }
+  }
+
+  &-wrap {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+}
