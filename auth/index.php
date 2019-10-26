@@ -48,25 +48,6 @@ if ($_GET['logout'] === "true") {
     </nav>
 </header>
 <section class="page-wrap">
-    <!--    <div class="info-row">-->
-    <!---->
-    <!--        <div class="info-block">-->
-    <!--            <div class="info-block__header">-->
-    <!--                <span>Объяснение</span>-->
-    <!--            </div>-->
-    <!--            <div class="info-block__body">-->
-    <!--                <p>-->
-    <!--                    На данной странице продемонстрирован пример-->
-    <!--                    Авторизации и регистрации с применением Ajax.-->
-    <!--                </p>-->
-    <!--                <p>-->
-    <!--                    Для просмотра исходного кода зайдите в папку-->
-    <!--                    с данным примером в репозитории.-->
-    <!--                </p>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!---->
-    <!--    </div>-->
     <!--Если сессия пуста, то отобразить форму входа и регистрации-->
     <div class="form-wrap <?php if (!empty($_SESSION['logged_user'])) echo 'hide'; ?>">
         <div class="info-row p0">
