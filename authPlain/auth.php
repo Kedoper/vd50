@@ -36,7 +36,7 @@ function searchUser($user_name): int
                 /*Возвращаем номер линии*/
                 return $line;
             }
-            /*Если search = true то выходим из цикла и возвращаем линиию*/
+            /*Если search = true то выходим из цикла и возвращаем линию*/
             if ($search) return $line;
             $line++;
         }
@@ -63,7 +63,7 @@ function getUserPassword($line_id): string
 
     /*Тут все то же самое что и в функции для поиска пользователя*/
 
-    $passwords = fopen(__DIR__ . '/passwords.txt', 'r+');
+    $passwords = fopen(__DIR__ . '/passwords.txt', 'r');
     $search = false;
     if ($passwords) {
         $line = 1;
