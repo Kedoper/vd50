@@ -10,3 +10,4 @@
 
 1) [Форма входа и регистрации](https://github.com/Kedoper/vd50/tree/master/auth)
 1) [Скрипт для записи новых пользователей(с паролями) в разные файлы (users.txt и pass.txt), а так же чтение этих файлов (поиск пользователя и вывод его пароля)](https://github.com/Kedoper/vd50/tree/master/authPlain)
+1) [Обработчик API запросов (банальный)](https://github.com/Kedoper/vd50/tree/master/ApiHandler)

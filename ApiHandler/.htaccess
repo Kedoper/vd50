@@ -1,0 +1,16 @@
+
+RewriteEngine On
+   #  Директива включает редиректы.
+RewriteBase /
+   # Без директивы (.*) = /$1 будет /var/wwww/site/web/$1  с директивой  = /$1
+Options +FollowSymLinks
+   # Разрешает переход по символическим ссылкам.
+php_flag display_errors off
+  # запретить отображение ошибок  (требование монитора качества)
+php_flag allow_url_fopen off
+  # запретить  использовать удаленные файлы (требование проактивной защиты)
+
+DirectoryIndex index.php
+
+RewriteRule ^(.*)$ index.php
+
